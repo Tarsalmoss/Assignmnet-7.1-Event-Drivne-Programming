@@ -1,1 +1,70 @@
+<!--
+  Ian Andalon
+  Main page for my buttons + moving GIF assignment.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page title -->
+    <title>Ian's First Webpage</title>
+
+    <!-- Cool font to make it look nicer -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+
+    <!-- link to my CSS file -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Main title at the top -->
+    <header>
+        <h1>Welcome to Ian's Page</h1>
+    </header>
+
+    <!-- Navigation links -->
+    <nav>
+        <h2>Navigation</h2>
+        <a href="./index.html">Home</a><br>
+        <a href="./board.html">Boards</a><br>
+    </nav>
+
+    <!-- First random paragraph -->
+    <p>This is my first paragraph for this webpage so yeah.</p>
+
+    <!--
+      A form (required by assignment)
+      onsubmit return false so page doesn't reload
+    -->
+    <form id="controlForm" onsubmit="return false;">
+        <!-- Start button: when clicked, JS runs handleStartClick() -->
+        <button id="startBtn" type="submit" onclick="handleStartClick()">Start</button>
+
+        <!-- Stop button: when clicked, JS runs handleStopClick() -->
+        <button id="stopBtn" type="submit" onclick="handleStopClick()">Stop</button>
+    </form>
+
+    <!-- This box shows messages using innerHTML -->
+    <div id="messageBox"></div>
+
+    <!--
+      THIS is the GIF you uploaded.
+      It will move around the page.
+    -->
+    <p>
+        <img id="memeImage" src="Finn-and-Jake-GIF.gif" alt="Adventure Time GIF">
+    </p>
+
+    <!-- Footer info -->
+    <footer>
+        Ian Andalon<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283<br>
+    </footer>
+
+    <!-- Link to my JavaScript code -->
+    <script src="script.js"></script>
+</body>
+</html>
 
