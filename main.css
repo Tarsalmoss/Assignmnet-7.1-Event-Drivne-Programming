@@ -1,0 +1,72 @@
+/* main.css - trying to make the site not look boring */
+
+/* Soft background + better font */
+body {
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+    background: linear-gradient(135deg, #e3f2ff, #f4ffe9, #fff0f0);
+}
+
+/* Header spacing */
+header {
+    margin-bottom: 15px;
+}
+
+/* Nav box styling */
+nav {
+    background: rgba(255,255,255,0.7);
+    padding: 12px;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+/* Buttons so they don’t look cheap */
+#startBtn,
+#stopBtn {
+    padding: 10px 18px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Green start button */
+#startBtn {
+    background: linear-gradient(#42e38b, #1fa360);
+    color: white;
+}
+
+/* Red stop button */
+#stopBtn {
+    background: linear-gradient(#ff7979, #d6524d);
+    color: white;
+}
+
+/* Disabled buttons look faded */
+button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* Message box for innerHTML feedback */
+#messageBox {
+    margin-top: 10px;
+    padding: 10px;
+    background: white;
+    min-height: 25px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* The GIF is positioned absolutely so JS can move it */
+#memeImage {
+    position: absolute;
+    width: 260px; /* Use whatever size looks good */
+    border-radius: 10px;
+}
+
+/* Space for footer so GIF doesn't cover it */
+footer {
+    margin-top: 260px;
+}
